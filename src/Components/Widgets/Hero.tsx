@@ -16,13 +16,13 @@ const Hero = () => {
   return (
     <section>
       <Wrapper>
-        <div className=" flex  px-20 ">
+        <div className=" flex flex-col  md:flex-row basis-4/12 ">
           {/* Lift side  */}
-          <div className="basis-auto md:text-sm min-sm:flex-col md:flex-none bg-teal-700 font-san text-white md:border-[0]  border-8 h-auto">
+          <div className=" bg-teal-700 font-san  rounded-lg text-white ">
             <div>
               <div className="flex mx-1 justify-center mt-12">
                 <Image
-                  className="rounded-full w-32 h-32 md:w-32 md:h-32 lg:w-60 lg:h-60 "
+                  className="rounded-full w-32 h-32  md:w-32 md:h-32 lg:w-60 lg:h-60 "
                   src={HeroPoster}
                   alt={"Hero Poster"}
                 />
@@ -39,7 +39,9 @@ const Hero = () => {
                   src={CellIcon}
                   alt={"celllink"}
                 />
-                <text className="px-3 md:text-sm">+92-313-5978852</text>
+                <text className="px-2 mr-1 ml-10  sm:text-center md:text-sm">
+                  <a href="https://wa.me/qr/TZ6QKKV6N5NNP1">+92-313-5978852</a>
+                </text>
               </div>
               {/* email icon */}
               <div className="flex mt-3 ">
@@ -48,7 +50,7 @@ const Hero = () => {
                   src={EmailIcon}
                   alt={"Emaillink"}
                 />
-                <text className="px-3 md:text-sm">
+                <text className="px-2 text-center md:text-sm">
                   SheikhMohammadAqib@gmail.com
                 </text>
               </div>
@@ -60,7 +62,7 @@ const Hero = () => {
                   src={AddressIcon}
                   alt={"Addresslink"}
                 />
-                <text className="px-3 md:text-sm">
+                <text className="px-2 sm:text-center md:text-sm">
                   HSP Staff Colony House # i/262 Sahiwal
                 </text>
               </div>
@@ -75,9 +77,9 @@ const Hero = () => {
             {/* Link Icon */}
 
             {/* facebook icon */}
-            <div className="flex mt-3 md:text-sm ">
+            <div className="flex mt-3 text-center md:text-sm ">
               <Image
-                className="w-10 h-6 md:w-5"
+                className="w-10 h-6  md:w-5"
                 src={FacebookIcon}
                 alt={"facebooklink"}
               />
@@ -175,19 +177,19 @@ const Hero = () => {
 
           {/* Right side  */}
 
-          <div className=" flex flex-1  basis-auto bg-gray-500 font-sans max-w-screen-xl  mx-auto px-4 text-white h-auto">
-            <div className="py-28 lg:w-auto md:ml-0 ml-11">
-              <h1 className=" font-sans lg:text-4xl md:text-sm md:-mt-16 md:font- ">
+          <div className=" flex flex-1 rounded-lg bg-gray-500 font-sans max-w-screen-xl basis-4/12 mx-auto px-4 text-white ">
+            <div className="py-28 lg:w-auto md:ml-0  sm:ml-11">
+              <h1 className=" font-sans lg:text-4xl text-2xl  -mt-20 md:text-3xl md:-mt-0 md:font-lg ">
                 Sheikh Mohammad Aqib
-                <h4>Student PIAIC-165870</h4>
               </h1>
-              <div className="lg:mt-32 md:mt-1">
+              <h4> Full Stack Web-Developer</h4>
+              <div className="lg:mt-32  md:mt-1">
                 {/* profile */}
 
                 <div>
                   <h4 className="text-amber-900  font-bold">Profile</h4>
                   <p className="md:text-xs ">
-                    8 years experience in networking field on installation and
+                    8 Years experience in networking field on installation and
                     service for “Security surveillance solutions” for Punjab and
                     Sindh Prisons.
                     <br />• High level command on installation and service of IP
@@ -205,10 +207,17 @@ const Hero = () => {
                 <div>
                   <h4 className="text-amber-900 font-bold">Objective</h4>
                   <p className="md:text-xs ">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Minima error, sunt doloribus delectus commodi eaque, aliquid
-                    soluta eligendi maiores provident fugiat eveniet! Ullam
-                    expedita laudantium in, consequatur minus veritatis veniam?
+                    As a web developer, my objective is to utilize my technical
+                    skills and experience to create efficient and user-friendly
+                    web applications. I aim to work in a dynamic environment
+                    that challenges me to continuously improve my abilities and
+                    stay up-to-date with the latest technologies. I strive to
+                    deliver high-quality work that meets and exceeds client
+                    expectations, while collaborating effectively with team
+                    members and stakeholders. Ultimately, my goal is to
+                    contribute to the success of projects by designing and
+                    implementing innovative solutions that enhance user
+                    experience and drive business growth.
                   </p>
                 </div>
                 {/* Working Exp */}
@@ -216,37 +225,71 @@ const Hero = () => {
                   <h4 className="text-amber-900 font-bold">
                     Working Experience
                   </h4>
-                  <h3 className="md:text-xs">
-                    Company Name / MINISTRY OF DEFENCE PRODUCTION
-                  </h3>
-                  <h3 className="md:text-xs">
-                    National Radio & Telecom Corporation./2014 to till date
+                  <div className="flex">
+                    <h3 className="md:text-xs text-gray-800 font-semibold">
+                      National Radio & Telecom Corporation.
+                    </h3>
+                    <h4 className="text-white md:text-xs">
+                      / 2014 to till date
+                    </h4>
+                  </div>
+                  <h3 className="md:text-xs text-gray-800 font-semibold">
+                    [Job Positions]
                   </h3>
                   <p className="md:text-xs ">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Minima error, sunt doloribus delectus commodi eaque, aliquid
-                    soluta eligendi maiores provident fugiat eveniet! Ullam
-                    expedita laudantium in, consequatur minus veritatis veniam?
+                    Doing job(NRTC) National Radio Telecommunication Corporation
+                    as a Operator 1 Sep 2014 to till date. <br /> 8 Years
+                    Experience in networking field on installation and service
+                    for “Security Surveillance Solutions” for Punjab and Sindh
+                    Prisons.
                   </p>
                 </div>
-                {/* profile */}
+                {/* Education */}
                 <div>
-                  <h4 className="text-amber-900 font-bold">profile</h4>
+                  <h4 className="text-amber-900 font-bold">Education</h4>
+                  <div className="flex">
+                    <h3 className="md:text-xs text-gray-800 font-semibold">
+                      BISE Abbottabad . BTE Peshawar
+                    </h3>
+                    <h4 className="text-white md:text-xs">/ 2009 to 2012</h4>
+                  </div>
+                  <h3 className="md:text-xs text-gray-800 font-semibold">
+                    [ SSC (Science) / DAE (Electrical) ]
+                  </h3>
                   <p className="md:text-xs ">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Minima error, sunt doloribus delectus commodi eaque, aliquid
-                    soluta eligendi maiores provident fugiat eveniet! Ullam
-                    expedita laudantium in, consequatur minus veritatis veniam?
+                    Electrical technology is the study and application of
+                    electrical systems, components, and devices. It involves the
+                    understanding of principles and laws governing the behavior
+                    of electricity, circuits, and electromagnetic fields.
+                    Electrical technology plays a crucial role in various
+                    industries, including power generation, distribution,
+                    telecommunications, automation, and transportation.
                   </p>
                 </div>
-                {/* profile */}
+                {/* PIAIC */}
                 <div>
-                  <h4 className="text-amber-900 font-bold">profile</h4>
+                  <h4 className="text-amber-900 font-bold">Education</h4>
+                  <div className="flex">
+                    <h3 className="md:text-xs text-gray-800 font-semibold">
+                      Presidential Initiative for Artificial Intelligence and
+                      Computing (PIAIC)
+                    </h3>
+                    <h4 className="text-white md:text-xs">
+                      / 19th June 2022 to To be Contine ...
+                    </h4>
+                  </div>
+                  <h3 className="md:text-xs text-gray-800 font-semibold">
+                    [ Web 3 and Metaverse Specialization ]
+                  </h3>
                   <p className="md:text-xs ">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Minima error, sunt doloribus delectus commodi eaque, aliquid
-                    soluta eligendi maiores provident fugiat eveniet! Ullam
-                    expedita laudantium in, consequatur minus veritatis veniam?
+                    Web 3.0 (Blockchain) and Metaverse Specialization
+                    <br />
+                    This Web 3.0 and Metaverse specialization focuses on
+                    developing full-stack Web 3.0 and Metaverse experiences for
+                    the next generation of the internet by specializing in
+                    building worlds that merge the best of cutting-edge
+                    decentralized distributed blockchains with 3D metaverse
+                    client experiences.
                   </p>
                 </div>
               </div>
